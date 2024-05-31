@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://kit.fontawesome.com/cbd8105b4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <style>
-        body{
+        body {
             background-color: #fac43b;
         }
-        #box{
+
+        #box {
             width: 400px;
             height: 400px;
             top: 15%;
@@ -17,7 +19,8 @@
             position: absolute;
             animation: fly 10s infinite;
         }
-        #box>div{
+
+        #box>div {
             background-color: #fcd778;
             width: 60px;
             height: 60px;
@@ -30,63 +33,76 @@
             align-items: center;
             animation: fly2 5s infinite;
         }
-        #box>div:nth-child(1){
-            transform: translate(-150px,120px);
+
+        #box>div:nth-child(1) {
+            transform: translate(-150px, 120px);
         }
-        #box>div:nth-child(2){
-            transform: translate(-150px,-120px);
+
+        #box>div:nth-child(2) {
+            transform: translate(-150px, -120px);
         }
-        #box>div:nth-child(3){
+
+        #box>div:nth-child(3) {
             transform: translateY(200px);
         }
-        #box>div:nth-child(4){
+
+        #box>div:nth-child(4) {
             transform: translateY(-200px);
         }
-        #box>div:nth-child(5){
-            transform: translate(150px,-120px);
+
+        #box>div:nth-child(5) {
+            transform: translate(150px, -120px);
         }
-        #box>div:nth-child(6){
-            transform: translate(150px,120px);
+
+        #box>div:nth-child(6) {
+            transform: translate(150px, 120px);
         }
-        #box>div:nth-child(7){
+
+        #box>div:nth-child(7) {
             transform: translateX(-200px);
         }
-        #box>div:nth-child(8){
+
+        #box>div:nth-child(8) {
             transform: translateX(200px);
         }
 
 
         @keyframes fly {
-        50%{
-            transform: rotate(180deg)
+            50% {
+                transform: rotate(180deg)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
         }
-        100% {
-          transform: rotate(360deg)
-        } 
-      }
-      
-      @keyframes col {
-        0%{
-            transform: translateX(-250px);
+
+        @keyframes col {
+            0% {
+                transform: translateX(-250px);
+            }
+
+            100% {
+                color: black;
+                transform: translateX(150px);
+            }
         }
-        100%{
-            color: black;
-            transform: translateX(150px);
+
+        h1 {
+            color: white;
+            animation: col 5s infinite;
         }
-      }
-      h1{
-        color: white;
-        animation: col 5s infinite;
-      }
-      #box2{
-        width: 300px;
-        height: 100px;
-        position: absolute;
-        top: 300px;
-        left: 100px;
-      }
+
+        #box2 {
+            width: 300px;
+            height: 100px;
+            position: absolute;
+            top: 300px;
+            left: 100px;
+        }
     </style>
 </head>
+
 <body>
     <div id="box2">
         <h1>Pay bills instantly</h1>
@@ -102,4 +118,5 @@
         <div><i class="fa-brands fa-twitter fa-xl "></i></div>
     </div>
 </body>
+
 </html>
